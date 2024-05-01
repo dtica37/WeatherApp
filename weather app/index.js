@@ -14,7 +14,7 @@ search.addEventListener('click', () => {
         .then(response => response.json())
         .then(json => {
             console.log(json)
-            if (json.cod === '404') { // Check for 404 status code
+            if (json.cod === '404') { 
                 showError();
             } else {
                 showWeatherData(json);
